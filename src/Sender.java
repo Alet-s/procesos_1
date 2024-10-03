@@ -70,7 +70,6 @@ public class Sender {
         while (!(lettersToSend = scanner.nextLine().strip()).equalsIgnoreCase("fin")) {
 
             //1- Envíamos las letras.
-            //TODO: evitar que el Scanner siga esperando caracteres si se escribe un salto de línea vacío
             parent.sendToChild().println(lettersToSend);
 
             //2- Capturamos el Stream del subproceso.
